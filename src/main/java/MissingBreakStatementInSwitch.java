@@ -5,7 +5,7 @@ public class MissingBreakStatementInSwitch {
     public void Statement(){
         int day = 2;
         int n =2;
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH
+        
         switch (day){
 
             case 1:
@@ -23,7 +23,7 @@ public class MissingBreakStatementInSwitch {
                 logger.info("4");
 
         }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH
+        
         switch (n){
 
             case 1:
@@ -37,7 +37,7 @@ public class MissingBreakStatementInSwitch {
                 logger.info("4");
 
         }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH/no-detect
+        
         switch (n){
 
             case 1:
@@ -46,34 +46,7 @@ public class MissingBreakStatementInSwitch {
                 logger.info("2");
 
         }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH/no-detect
-        switch (n){
-
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-                logger.info("2");
-                break;
-
-            default:
-                logger.info("4");
-
-        }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH
-        switch (n){
-
-            default:
-                logger.info("4");
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-                logger.info("2");
-                break;
-
-        }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH/no-detect
+        
         switch (n){
 
             case 1:
@@ -87,7 +60,34 @@ public class MissingBreakStatementInSwitch {
                 logger.info("4");
 
         }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH
+        
+        switch (n){
+
+            default:
+                logger.info("4");
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                logger.info("2");
+                break;
+
+        }
+       
+        switch (n){
+
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+                logger.info("2");
+                break;
+
+            default:
+                logger.info("4");
+
+        }
+        
         switch (n){
 
             case 1:
@@ -105,7 +105,7 @@ public class MissingBreakStatementInSwitch {
 
 
     public double DemoMethod(int n){
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH/no-detect
+        
         switch (n){
 
             case 1:
@@ -121,7 +121,7 @@ public class MissingBreakStatementInSwitch {
                 return 5.0;
 
         }
-        // EMB-ISSUE: CodeIssueNames.MISSING_BREAK_STATEMENT_IN_SWITCH
+       
         switch (n){
 
             case 1:
